@@ -36,7 +36,7 @@ public abstract class Creature implements ITargetable{
 
     private Boolean attackHasHit(){
         int randomNum1To11 = ThreadLocalRandom.current().nextInt(1, 10 + 1);
-        return randomNum1To11 < 2;
+        return randomNum1To11 < 5;
     }
 
     public void attack(ITargetable target){
